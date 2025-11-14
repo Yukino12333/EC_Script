@@ -1,24 +1,39 @@
 {
-  "name": "二重螺旋脚本",
-  "version":  "0.0.1",
-  "mirrorchyan_rid":  "ecs",
-  "mirrorchyan_multiplatform":  false, 
-  "url":  "https://github.com/Yukino12333/EC_Script",
-  "custom_title": "二重螺旋脚本",
-  "resource": [
-    {
-      "name": "官服",
-      "path": "{PROJECT_DIR}/resource"
-    }
-  ],
-  "task": [
-    {
-      "name": "开始刷密函",
-      "entry": "01_开始挑战",
-      "check": true,
-      "doc": "在大世界或者副本内",
-      "repeatable": true,
-      "repeat_count": 1
-    }
-  ]
+    "name": "ECS",
+    "url": "https://github.com/Yukino12333/EC_Script",
+    "mirrorchyan_rid": "ECS",
+    "mirrorchyan_multiplatform": true,
+    "mfa_max_version": "v1.0.2",
+    "mfa_min_version": "v1.0.2",
+    "controller": [
+        {
+            "name": "桌面端",
+            "type": "Win32",
+            "win32": {
+                "class_regex": ".*",
+                "window_regex": "二重螺旋|Duet Night Abyss",
+                "input": 4,
+                "screencap": 16
+            }
+        }
+    ],
+    "resource": [
+        {
+            "name": "官服",
+            "path": [
+                "{PROJECT_DIR}/resource"
+            ]
+        }
+    ],
+    "agent": {
+        "child_exec": "{PROJECT_DIR}/agent/MaaAgent.exe",
+        "child_args": []
+    },
+    "task": [
+        {
+            "name": "10级火本探索",
+            "entry": "01_开始"
+            
+        }
+    ]
 }
