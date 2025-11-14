@@ -1,0 +1,24 @@
+{
+  "name": "二重螺旋脚本",
+  "version":  "0.0.1",
+  "mirrorchyan_rid":  "ecs",
+  "mirrorchyan_multiplatform":  false, 
+  "url":  "https://github.com/Yukino12333/EC_Script",
+  "custom_title": "二重螺旋脚本",
+  "resource": [
+    {
+      "name": "官服",
+      "path": "{PROJECT_DIR}/resource"
+    }
+  ],
+  "task": [
+    {
+      "name": "开始刷密函",
+      "entry": "01_开始挑战",
+      "check": true,
+      "doc": "在大世界或者副本内",
+      "repeatable": true,
+      "repeat_count": 1
+    }
+  ]
+}
